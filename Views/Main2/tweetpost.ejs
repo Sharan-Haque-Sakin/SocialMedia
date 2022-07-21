@@ -1,0 +1,25 @@
+<%- include("partials");%>
+
+
+<form action="/tweet" method="post">
+    <input type="text" name="tweetForm" autocomplete="false">
+</form>
+</body>
+
+
+
+    <script>
+        function logOut(){
+            fetch('/' , {
+                method:"DELETE"
+            });
+            
+            setTimeout(() => {
+                window.location.replace('/')
+            }, 1000);
+
+        }
+
+            
+    </script>
+</html>

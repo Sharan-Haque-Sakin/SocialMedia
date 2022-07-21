@@ -1,0 +1,25 @@
+{
+  "name": "tweeter_2",
+  "version": "1.0.0",
+  "description": "This is Tweeter 2.0 .. I am making this project just for prectise...Anyone can share tweets in this website",
+  "main": "main.js",
+  "author": "Sharan Haque Sakin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cookieparser": "^0.1.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt": "^0.2.0",
+    "mongoose": "^6.4.4"
+  },
+  "scripts": {
+    "start": "node main.js"
+  }
+}

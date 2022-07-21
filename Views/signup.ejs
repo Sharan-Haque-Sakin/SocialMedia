@@ -1,0 +1,75 @@
+ <%- include('partials'); %>
+</head>
+
+<link rel="stylesheet" href="../css/signupPage.css">
+<style>
+	#check{
+		scale:2;
+		width: 14px;
+	}
+	#lol{
+		float: right;
+		color: black;
+	}
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Twitter</h1>
+		<h1>2.0</h1>
+		<p>Welcome to Twitter 2.0! Here you can tweet publicly and have fun with your fans! Tweet and enjoy!</p>
+		<span>
+			<!-- <p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a> -->
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Sign Up</h5>
+		<p>Already had an Account? <a href="/">Go to Login Page</a></p>
+		<div class="inputs">
+			<form action="/signup" id="signupForm" method="post">
+				<input type="text" name="userName" autocomplete="off" placeholder="Your User Name">
+				<br>
+					<input type="email" name="Email" autocomplete="off" placeholder="Your Email">
+					<br>
+						<input type="password" name="Security" autocomplete="off" placeholder="Set Your Password">
+						<br>
+						<input type="submit" name="SubmitBtn" value="Signup" id="submitBtn">
+			</form>
+		</div> 
+		<!-- <input type="checkbox" id="check" onclick="myFunction()"> <p id="lol">Show Pass</p> -->
+			<br><br>
+			
+
+			
+			<br>
+			<!-- <button id="loginBtn">Login</button> -->
+	</div>
+	
+</div>
+<!-- partial -->
+  
+</body>
+<script>
+	// const form = document.getElementById('signupForm')
+
+	// form.addEventListener('submit' , function (e) {
+	// 	e.preventDefault();
+
+	// 	const formData= new FormData(form);
+
+	// 	const response = fetch('/signup' , {
+	// 		method:'post',
+	// 		body:formData
+	// 	})
+
+	// 	response.json();
+	// })
+</script>
+</html>

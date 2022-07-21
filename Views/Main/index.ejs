@@ -1,0 +1,66 @@
+<%- include('partials');%>
+
+<style>
+  .Like{
+    background-color: #0093ff;
+border: none;
+width: 90px;
+height: 26px;
+text-align: center;
+margin: 8px 54px;
+transition: border-radius background-color;
+transition-duration: 0.5s;
+cursor: pointer;
+
+  }
+  .Like:hover{
+    border-radius: 8px ;
+    background-color: blue;
+  }
+</style>
+<div class="Container">
+      <div class="layout">
+<h1 class="h1">Welcome to Twitter 2.0</h1>
+       
+      <div class="layout__main">
+
+        <!-- Main Tweet Here! -->
+        <div class="tweet">
+          <!-- <p class="tweet__author-logo" id="authorLogo"  >S</p> -->
+          <!-- <img src="../../images/profilepic.png" alt="" class="tweet_author-logo"> -->
+          
+          <% user.forEach(function(user){ %>
+            <div class="tweet__main">
+            <img class="tweet__author-logo" src="../../images/profilepic.png" />
+            <div class="tweet__header">
+              <div class="tweet__author-name" id="authorName" >
+                <%= user.userName%>
+              </div>
+            </div>
+            <!-- <br> -->
+            
+            <div id="Content"class="tweet__content">
+              <%= user.Tweet %>
+            </div>
+            <button class="Like">Like</button>
+            
+            <% }); %>
+           
+          </div>
+        </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <!-- <style> -->
+        
+
+        </div>
+
+</html>

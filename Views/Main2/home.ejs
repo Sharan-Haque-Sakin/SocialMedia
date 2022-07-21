@@ -1,0 +1,59 @@
+<%- include("partials");%>
+
+
+<div class="post">
+    <% user.forEach(function ( users ){ %>
+    <div class="post-top">
+                    <div class="dp">
+                        <img src="../../images/profilepic.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name"><%= users.userName %></p>
+                        <!-- <span class="time">12 hrs ago</span> -->
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                 <%= users.tweet%> 
+                </div>
+                <% });%>
+                
+                <!-- <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                      
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                       
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i> -->
+                       
+                    </div>
+                </div>
+            </div>
+
+ 
+                </div>
+            </div>
+            
+        </div>
+       
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        function logOut(){
+            fetch('/home' , {
+                method:"DELETE"
+            });
+            setTimeout(() => {
+                window.location.replace('/')
+            }, 1000);
+
+        }
+    </script>
+</html>
